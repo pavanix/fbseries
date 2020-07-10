@@ -1,0 +1,18 @@
+sequence = int(input("number of sequences? "))
+
+a, b= 0, 1
+e = 0
+
+if sequence <= 0:
+   print("enter number greater than 0")
+elif sequence == 1:
+   print("Fibonacci sequence till",sequence,":")
+   print(a)
+else:
+   print("Fibonacci sequence:")
+   while e < sequence:
+       print(a)
+       sum = a + b
+       a = b
+       b = sum
+       e += 1
